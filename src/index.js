@@ -5,7 +5,6 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import Categories from './components/Categories';
 import Navigation from './components/Navigation';
 import App from './App';
 
@@ -16,7 +15,6 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="Books" element={<App />} />
-      <Route path="Categories" element={<Categories />} />
     </Routes>
   </BrowserRouter>,
 );
