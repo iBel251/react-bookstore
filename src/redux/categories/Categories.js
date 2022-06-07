@@ -1,17 +1,17 @@
-const CATEGORY = 'CATEGORY';
+const CHECK_STATUS = 'react-bookstore/categories/CHECK_STATUS';
 const initialCategoryState = [];
 
 const categoryReducer = (state = initialCategoryState, action) => {
   switch (action.type) {
-    case CATEGORY:
-      return 'Null';
+    case CHECK_STATUS:
+      return 'UNDER CONSTRUCTION';
     default:
       return state;
   }
 };
 
 const checkCategory = () => ({
-  type: CATEGORY,
+  type: CHECK_STATUS,
 });
 
 export { checkCategory };
