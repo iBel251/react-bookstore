@@ -5,6 +5,7 @@ const REMOVE_BOOK = 'REMOVE_BOOK';
 
 const initialState = [];
 
+// Reducer
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
@@ -16,6 +17,7 @@ const bookReducer = (state = initialState, action) => {
   }
 };
 
+// Actions
 const addBook = () => ({
   type: ADD_BOOK,
   info: {
