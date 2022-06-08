@@ -1,16 +1,22 @@
-import './App.css';
-import store from './redux/configureStore';
-import { addBook, removeBook } from './redux/books/Books';
+import './styles/App.css';
+import '@fontsource/roboto-slab';
+import { Route, Routes } from 'react-router-dom';
+import Books from './pages/Books';
+import Categories from './pages/Categories';
+import Navigation from './components/Navigation';
 
-const Test = () => {
-  store.subscribe(() => console.log('Updated state', store.getState()));
-  console.log('Initial state', store.getState());
-  store.dispatch(addBook());
-  store.dispatch(removeBook());
-};
 function App() {
   return (
-    <Test />
+    <div>
+      <Navigation />
+      <div>
+        <Routes>
+          <Route path="/" element={<Books />} />
+          <Route path="Books" element={<Books />} />
+          <Route path="Categories" element={<Categories />} />
+        </Routes>
+      </div>
+    </div>
   );
 }
 
