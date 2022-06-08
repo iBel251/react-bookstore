@@ -1,21 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from 'react-router-dom';
-import Navigation from './components/Navigation';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import App from './App';
+import store from './redux/configureStore';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <Navigation />
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="Books" element={<App />} />
-    </Routes>
+    <Provider store={store}>
+      <App />
+    </Provider>
   </BrowserRouter>,
 );
 
