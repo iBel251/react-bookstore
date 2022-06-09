@@ -217,7 +217,7 @@ button:hover {
 
 .categories-page span {
   margin: auto;
-  color: red;
+  color: rgb(255, 0, 0);
   margin-top: 20px;
   font-weight: bold;
 }
