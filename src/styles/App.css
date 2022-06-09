@@ -197,7 +197,7 @@ button:hover {
   border: none;
 }
 
-/* categories page styiling */
+/* category page styiling */
 
 .categories-page {
   display: flex;
@@ -217,7 +217,7 @@ button:hover {
 
 .categories-page span {
   margin: auto;
-  color: red;
+  color: rgb(0, 255, 13);
   margin-top: 20px;
   font-weight: bold;
 }
